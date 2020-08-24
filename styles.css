@@ -1,0 +1,192 @@
+:root {
+    --color1: rgb(21, 196, 94);
+    --color2: #EEE;
+}
+
+* {
+    font-family: Arial, Helvetica, sans-serif;
+    margin: 0;
+    padding: 0;
+}
+
+*:focus {
+    outline: none;
+}
+
+body {
+    background-color: var(--color2);
+    height: 100vh;
+}
+
+main {
+    align-items: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+}
+
+h1 {
+    font-size: 6vw;
+    margin: 20px 0;
+}
+
+.container1 {
+    display: flex;
+    margin-bottom: 35px;
+    width:80vw;
+}
+
+.container1 input {
+    border: 2px solid var(--color1);
+    border-right: none;
+    border-radius: 5px 0px 0px 5px;
+    font-size: 2.5vw;
+    padding: .5vw;
+    width: 63vw;
+}
+
+.container1 button {
+    background-color: var(--color1);
+    border: 2px solid var(--color1);
+    border-radius: 0px 5px 5px 0px;
+    color: var(--color2);
+    cursor: pointer;
+    font-size: 2.5vw;
+    padding: 1.5vw 2vw;
+    transition: background-color 500ms, color 500ms;
+}
+
+.container1 button:hover {
+    background-color: var(--color2);
+    color: var(--color1);
+}
+
+.container2 {
+    align-items: center;
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 40px;
+}
+
+table {
+    font-size: 3vw;
+    font-weight: bold;
+    margin-bottom: 20px;
+    width: 78vw;
+}
+
+td {
+    width: 60vw;
+}
+
+.heart0 {
+    filter: invert(24%) sepia(91%) saturate(3082%) hue-rotate(323deg) brightness(98%) contrast(91%);
+}
+
+.heart1 {
+    filter: invert(17%) sepia(90%) saturate(7486%) hue-rotate(332deg) brightness(100%) contrast(104%);
+}
+
+.tableButtons {
+    width: 4.5vw;
+}
+
+.buttons {
+    cursor: pointer;
+    width: 3vw;
+    margin: .25vw;
+    transition: filter 500ms, margin 500ms, width 500ms;
+}
+
+.buttons:hover {
+    margin: 0;
+    width: 3.5vw;
+}
+
+.update {
+    display: none;
+    filter: invert(75%) sepia(27%) saturate(7416%) hue-rotate(96deg) brightness(94%) contrast(83%);
+}
+
+.update:hover {
+    filter: invert(18%) sepia(99%) saturate(4796%) hue-rotate(148deg) brightness(88%) contrast(86%);
+}
+
+
+.edit {
+    filter: invert(36%) sepia(96%) saturate(414%) hue-rotate(142deg) brightness(94%) contrast(89%);
+}
+
+.edit:hover {
+    filter: invert(16%) sepia(78%) saturate(766%) hue-rotate(169deg) brightness(91%) contrast(104%);
+}
+
+.delete {
+    filter: invert(24%) sepia(100%) saturate(5360%) hue-rotate(354deg) brightness(109%) contrast(83%);
+}
+
+.delete:hover {
+    filter: invert(13%) sepia(54%) saturate(3607%) hue-rotate(348deg) brightness(86%) contrast(122%);
+}
+
+.clear {
+    background-color: var(--color2);
+    border: 2px solid var(--color1);
+    border-radius: 3px;
+    color: var(--color1);
+    cursor: pointer;
+    font-size: 2.5vw;
+    padding: 1.5vw 2vw;
+    transition: background-color 500ms, color 500ms;
+}
+
+.clear:hover {
+    background-color: var(--color1);
+    color: var(--color2);
+}
+
+.editInput {
+    font-size: 3vw;
+    font-weight: bold;
+    width: 55vw;
+}
+
+@media screen and (max-width:450px) {
+    h1 {
+        font-size: 10vw;
+    }
+    
+    .container1 {
+        width: 90vw;
+    }
+    
+    .container1 input {
+        font-size: 5vw;
+        width: 65vw;
+    }
+    
+    .container1 button {
+        font-size: 4vw;
+    }
+
+    table {
+        font-size: 4.5vw;
+        width: 90vw;
+    }
+
+    .buttons {
+        width: 5vw;
+        margin: .5vw;
+    }
+    
+    .buttons:hover {
+        margin: 0;
+        width: 6vw;
+    }
+    
+    .clear {
+        font-size: 4vw;
+        position: fixed;
+        top: 92vh;
+    }
+}
